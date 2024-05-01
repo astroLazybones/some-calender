@@ -1,6 +1,4 @@
 import time
-import requests
-import json
 import datetime
 import colorama
 
@@ -68,6 +66,11 @@ for i in range(lenty(tech_month)-1):
             frick = frick + f"{colorama.Fore.RED}{james}{colorama.Style.RESET_ALL}  "
         else:
             frick = frick + f"{james}  "
+    elif ''.join(mike[james]) == "11":
+        if james == weekday:
+            frick = frick + f" {colorama.Fore.RED}{james}{colorama.Style.RESET_ALL} "
+        else:
+            frick = frick + f" {james} "
     else:
         if james == weekday:
             frick = frick + f"{colorama.Fore.RED}{james}{colorama.Style.RESET_ALL} "
